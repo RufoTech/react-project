@@ -1,0 +1,211 @@
+:root{
+    --header-left:#0a121f;
+    --header-right:#0b1320;
+    --award-card:#0e1623;
+}
+.mobile-menu{
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    z-index: 99999;
+   background: rgba(0,0,0,0.6);
+   overflow-x: hidden;
+  transition: all 1.2s ease;
+    
+}
+.mobile-links a {
+    color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 40px;
+}
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mobile-menu.aktiv{
+    width: 100%;
+   
+}
+.sign-in-btn{
+    background-color: #3A68B8;
+    width: 112px;
+    height: 52px;
+     color: #fff;
+     border-color: transparent;
+     border-radius: 5px;
+    
+}
+.deep-h1{
+    font-size: 33px;
+}
+.closeicon{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 40px;
+}
+
+.my-background{
+background: linear-gradient(to right, var(--header-left),var(--header-right));
+}
+.introduction{
+    background-color: #08101d;
+}
+.deep-paraqraf{
+    color:#b5b7bb !important ;
+    font-size: 22px;
+}
+
+.next-platform{
+    color: #3A68B8;
+}
+.introduction-paraqraf{
+    color:#b5b7bb !important ;
+    font-size: 14px;
+}
+
+.introduction{
+    padding-top: 100px;
+}
+.watch-video, .sign-in, .get-started, .deep-learning-btn{
+    background-color: #3A68B8;
+    color: #fff;
+     border-color: transparent;
+     border-radius: 5px;
+}
+.deep-right-side{
+    padding-top: 120px;
+}
+.watch-video{
+    width: 217px;
+    height: 57px;
+   
+}
+.sign-in{
+    width: 112px;
+    height: 57px;
+}
+.get-started{
+    width: 171px;
+    height: 57px;
+}
+.deep-learning-btn{
+    width: 171px;
+    height: 57px;
+}
+.shirketler-section{
+    background-color: #09111e;
+}
+.deep-learning{
+    background-color: #020a18;
+}
+.award-card{
+    background-color: var(--award-card);
+    padding: 40px;
+   
+}
+.award-card img{
+    width: 73px;
+   
+    display: block;
+    margin: 20px auto;
+}
+.award-card h2{
+    color: #b8babe;
+}
+.award-card p{
+    color: #b8babe;
+}
+.awards-card{
+    background-color: #020a18;
+}
+.about{
+    background-color: #020a18;
+}
+.about-h1{
+    color: #fff;
+}
+.about p{
+    color: #b8babe;
+}
+.footer{
+    background-color: #020a18;
+}
+.npm-text{
+    font-size: 38px !important;
+}
+.deep-paraqraf{
+    font-size: 15px;
+}
+@media(min-width:320px) and (max-width:376px){
+   .foto{
+    width: 234px;
+   }
+   .award-card{
+    
+    padding: 40px;
+   
+}
+.deep-h1{
+    font-size: 26px;
+}
+.about-h1{
+    font-size: 24px
+}
+.npm-text{
+    font-size: 30px !important;
+}
+.introduction-paraqraf {
+    font-size: 12px;
+}
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .deep-h1{
+        font-size: 30px !important;
+    }
+    .deep-left-side{
+       padding-top: 100px;
+    }
+    .award-card{
+       
+        padding: 50px;
+       
+    }
+    .about-h1{
+       font-size: 27px;
+    }
+    .about-right-side{
+        padding-top: 130px;
+    }
+    .introduction-paraqraf{
+       
+        font-size: 20px;
+    }
+}
+@media(min-width:992px){
+    .intro-left-side{
+        padding-top: 100px ;
+    }
+    .intro-right-side{
+        padding-top: 10px;
+    }
+    .deep-h1{
+        font-size: 46px;
+    }
+    .deep-paraqraf{
+       
+        font-size: 22px;
+    }
+    .npm-text{
+        font-size: 52px !important;
+    }
+    .introduction-paraqraf{
+       
+        font-size: 20px;
+    }
+}
