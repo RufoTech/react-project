@@ -54,10 +54,11 @@ const Header:React.FC = () => {
           <li className="nav-item">
             <a className="nav-link px-4 text-light" href="#">Blog</a>
           </li>
-        
           <li className="nav-item">
-            <a className="nav-link px-4 text-light " aria-disabled="true">Contact</a>
+            <a className="nav-link px-4 text-light" href="#"> Contact</a>
           </li>
+        
+          
         </ul>
 
      <Button inTextBtn="Sign In" photo="" klassAdi="sign-in"/>

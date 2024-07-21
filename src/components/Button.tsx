@@ -6,7 +6,7 @@ interface ButtonProps{
 }
 const button:React.FC<ButtonProps> = ({inTextBtn,photo,klassAdi}) => {
   return (
-    <button className={klassAdi} > <img src={photo} alt="" />{inTextBtn}</button>
+    <button className={klassAdi} > <img src={photo} alt="" className='me-2' />{inTextBtn}</button>
   )
 }
 

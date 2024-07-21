@@ -141,6 +141,12 @@ background: linear-gradient(to right, var(--header-left),var(--header-right));
 .deep-paraqraf{
     font-size: 15px;
 }
+.shirketler{
+    width: 300px;
+}
+.information p{
+color: #b8babe;;
+}
 @media(min-width:320px) and (max-width:376px){
    .foto{
     width: 234px;

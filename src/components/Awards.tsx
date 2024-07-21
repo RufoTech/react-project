@@ -2,15 +2,25 @@
 import React,{useState,useEffect} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Award from './Award'
-import melumatMukafatlari from '../components/awards.json'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import axios from 'axios';
 
-
-
+interface Award{
+  title:string;
+  image:string;
+  body:string;
+}
 
 const awards:React.FC = () => {
+  const[award,setAward]=useState<Award[]>([])
+useEffect(()=>{
+axios.get("src/components/awards.json")
+.then(cavab=>setAward(cavab.data))
+.catch(err=> console.log(err))
+
+},[])
   return (
     <div className='awards-card'>
         <Swiper
@@ -37,10 +47,12 @@ const awards:React.FC = () => {
           }}
       >
         {
-            melumatMukafatlari.map((birMelumat)=>(
-                <SwiperSlide> <Award awardTitle={birMelumat.title} awardImg={birMelumat.image} awardParaqraf={birMelumat.body}/></SwiperSlide>
+           award.map((birMelumat,index)=>(
+            <SwiperSlide key={index}> <Award awardTitle={birMelumat.title} awardImg={birMelumat.image} awardParaqraf={birMelumat.body}/></SwiperSlide>
 
-            ))
+           ))
+
+           
         }
                 
                 

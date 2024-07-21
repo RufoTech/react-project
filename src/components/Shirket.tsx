@@ -5,7 +5,7 @@ interface companyProps{
 const Shirket:React.FC<companyProps> = ({companyLogo}) => {
   return (
     <div>
-        <img src={companyLogo} alt="" className='py-5 my-5 w-100'/>
+        <img src={companyLogo} alt="" className='py-5 my-5  shirketler'/>
     </div>
   )
 }

@@ -24,7 +24,7 @@ const Footer:React.FC = () => {
         
 
         </div>
-        <div className="col-12 col-md-2 py-5 my-3">
+        <div className="col-12 col-md-2 py-5 my-3 information">
       <h6 >Information</h6>
       <p>New information</p>
       <p>About Store</p>
@@ -36,7 +36,7 @@ const Footer:React.FC = () => {
       <p>Orders History</p>
     </div>
 
-    <div className="col-12 col-md-2  py-5 my-3">
+    <div className="col-12 col-md-2  py-5 my-3 information">
       <h6>Information</h6>
       <p>New information</p>
       <p>About Store</p>
@@ -48,7 +48,7 @@ const Footer:React.FC = () => {
       <p>Orders History</p>
     </div>
 
-    <div className="col-12 col-md-2 py-5  my-3">
+    <div className="col-12 col-md-2 py-5  my-3 information">
      
         <h6>Information</h6>
         <p>New information</p>
