@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import Button from './Button'
 import { FaBars,FaRegWindowClose } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,39 +24,39 @@ const Header:React.FC = () => {
   <div className="mobile-menu" ref={casusElement}>
     <FaRegWindowClose className='text-white closeicon' onClick={navbariBagla}/>
     <nav className="mobile-links">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Blogs</a>
-      <a href="">Services</a>
-      <a href="">Contacts</a>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/blog">Blogs</Link>
+      <Link to="/services">Services</Link>
+      <Link to="/elaqe">Contacts</Link>
       <Button inTextBtn="Sign In" photo="" klassAdi="sign-in my-3"/>
 
     </nav>
   </div>
     <nav className="navbar navbar-expand-lg my-background ">
     <div className="container">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <img src="/assets/images/header/header.svg" alt="" className='foto' />
-      </a>
+      </Link>
       <button onClick={navbariAc} className="navbar-toggler text-white"  type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <FaBars/>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-5">
           <li className="nav-item">
-            <a className="nav-link px-3 text-light " aria-current="page" href="#">Home</a>
+            <Link className="nav-link px-3 text-light " aria-current="page" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link px-4 text-light" href="#">About</a>
+            <Link className="nav-link px-4 text-light" to="about">About</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link px-4 text-light" href="#">Services</a>
+            <Link className="nav-link px-4 text-light" to="services">Services</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link px-4 text-light" href="#">Blog</a>
+            <Link className="nav-link px-4 text-light" to="blog">Blog</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link px-4 text-light" href="#"> Contact</a>
+            <Link className="nav-link px-4 text-light" to="elaqe"> Contact</Link>
           </li>
         
           

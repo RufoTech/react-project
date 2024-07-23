@@ -1,27 +1,42 @@
 
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
-import 'bootstrap/dist/js/bootstrap.min.js'
 import Header from './components/Header'
-import Introduction from './components/Introduction'
-import Shirketler from './components/Shirketler'
-import Deeplearning from './components/Deeplearning'
-import Awards from './components/Awards'
-import About from './components/About'
-import Footer from './components/Footer'
 
+import Footer from './components/Footer'
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Abouts from './pages/Abouts'
+import Home from './pages/Home'
+import Error from './pages/Error'
+import Services from './pages/Services'
+import Blog from './pages/Blog'
+import Elaqe from './pages/Elaqe'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   
   return (
     <>
- <Header/>
-<Introduction/>
-<Shirketler/>
-<Deeplearning/>
-<Awards/>
-<About/>
+    <BrowserRouter>
+    <Header/>
+    <ToastContainer/>
+   
+  
+
+
+
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/about' element={<Abouts/>}/>
+  <Route path='*' element={<Error/>}/>
+  <Route path='/blog' element={<Blog/>}/>
+  <Route path='/services' element={<Services/>}/>
+  <Route path='/elaqe' element={<Elaqe/>}/>
+
+</Routes>
 <Footer/>
+    </BrowserRouter>
+ 
     </>
   )
 }

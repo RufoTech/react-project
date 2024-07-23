@@ -145,8 +145,57 @@ background: linear-gradient(to right, var(--header-left),var(--header-right));
     width: 300px;
 }
 .information p{
-color: #b8babe;;
+color: #b8babe;
+
+ 
 }
+.phone{
+    align-items: center;
+}
+.error-bg{
+    background-color: #020a18; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.error{
+    width: 100%;
+}
+form {
+    width: 503px;
+    background-color: var(--award-card);
+    box-shadow: 10px 20px 30px rgba(255,255,255,.6);
+    padding: 30px;
+
+    
+  }
+
+  form input, form textarea {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border-bottom: 1px solid #dedede !important;
+    resize: none;
+    color:#fff !important;
+  }
+
+  ::placeholder {
+    color: #fff !important;
+    opacity: 1; /* Firefox */
+  }
+
+  .contact-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, var(--header-left), var(--header-right));
+  
+  }
+
+
+
 @media(min-width:320px) and (max-width:376px){
    .foto{
     width: 234px;
@@ -168,6 +217,7 @@ color: #b8babe;;
 .introduction-paraqraf {
     font-size: 12px;
 }
+
 }
 
 @media(min-width:768px) and (max-width:991px){
@@ -214,4 +264,38 @@ color: #b8babe;;
        
         font-size: 20px;
     }
+    .error{
+        width: 800px !important;
+    }
+    form {
+        width: 503px;
+        background-color: var(--award-card);
+        box-shadow: 10px 20px 30px rgba(255,255,255,.6);
+        padding: 30px;
+  
+        
+      }
+  
+      form input, form textarea {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        border-bottom: 1px solid #dedede !important;
+        resize: none;
+        color:#fff !important;
+      }
+  
+      ::placeholder {
+        color: #fff !important;
+        opacity: 1; /* Firefox */
+      }
+  
+      .contact-form {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(to bottom, var(--header-left), var(--header-right));
+      
+      }
+  
 }

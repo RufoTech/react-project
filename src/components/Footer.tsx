@@ -9,11 +9,11 @@ const Footer:React.FC = () => {
         <img src="/assets/images/foooter/footer.svg" alt="" className='' />
         <h5 className='py-2'>Artificial intelligence</h5>
         <p className="py-2">Lorem ipsum is placeholder text <br /> commonly used in the graphic, print, and  <br /> layouts and visual mockups.</p>
-        <div className="mail d-flex py-3">
+        <div className="mail d-flex py-3 align-items-center">
         <img src="/assets/images/foooter/socialmedia/mail.svg" alt="maill"/>
       <h6 className="px-4">Company</h6>
       </div>
-      <div className="phone d-flex py-3 ">
+      <div className="phone d-flex py-3 align-items-center ">
       <img src="/assets/images/foooter/socialmedia/phone.svg" alt=""/>
       <h6 className="px-4">Phone: (064) 332-1233</h6>
     </div>
@@ -24,7 +24,7 @@ const Footer:React.FC = () => {
         
 
         </div>
-        <div className="col-12 col-md-2 py-5 my-3 information">
+        <div className="col-12 col-md-2 py-5 my-3 information ">
       <h6 >Information</h6>
       <p>New information</p>
       <p>About Store</p>
