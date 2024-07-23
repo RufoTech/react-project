@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
           
           },
           () => {
-            toast.error("Serverde xeta var. Bir az sonra cehd edin.")
+            toast.error("Serverde xeta var. Bir az sonra  yeniden cehd edin.")
 
           },
 
